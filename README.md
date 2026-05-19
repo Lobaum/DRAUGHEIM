@@ -9,11 +9,11 @@ Este guia mostra, passo a passo, como baixar e rodar o projeto localmente no com
 
 ---
 
-# 1. Baixando o projeto pelo GitHub
+# 1. Baixando o projeto pelo GitHub/Visual Studio Code
 
 Escolha uma pasta onde você quer salvar o projeto.
 
-rode:
+rode no terminal do vs code:
 
 ```bash
 git clone https://github.com/Lobaum/DRAUGHEIM.git
