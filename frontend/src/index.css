@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-bento-bg: #0a0a0c;
+  --color-bento-panel: #16161d;
+  --color-bento-accent: #1c1c22;
+  --color-nordic-gold: #fbbf24;
+  --color-nordic-cyan: #22d3ee;
+  --color-nordic-stone: #4b5563;
+}
+
+@layer base {
+  body {
+    @apply bg-bento-bg text-[#e0e0e0] font-sans antialiased overflow-hidden;
+    background-image: radial-gradient(#fbbf24 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  h1, h2, h3, h4, .font-nordic {
+    @apply font-display tracking-wider;
+  }
+}
+
+.bento-panel {
+  @apply bg-bento-panel border border-white/5 rounded-xl shadow-2xl;
+}
+
+.bento-grid-dots {
+  @apply absolute inset-0 opacity-10 pointer-events-none;
+  background-image: radial-gradient(#fbbf24 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.health-bar-bg { @apply bg-black rounded-full border border-white/10 overflow-hidden; }
+.health-bar-fill { @apply bg-gradient-to-r from-red-800 to-red-500 h-full transition-all duration-500; }
+
+.energy-bar-bg { @apply bg-black rounded-full border border-white/10 overflow-hidden; }
+.energy-bar-fill { @apply bg-gradient-to-r from-cyan-800 to-cyan-500 h-full transition-all duration-500; }
+
+.xp-bar-bg { @apply bg-black rounded-full border border-white/5 overflow-hidden; }
+.xp-bar-fill { @apply bg-gradient-to-r from-cyan-600 to-cyan-300 h-full transition-all duration-500; }
+
+.runic-rail-footer {
+  @apply h-4 bg-nordic-gold flex items-center overflow-hidden;
+}
+
+.animate-scroll {
+  animation: scroll-text 20s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
