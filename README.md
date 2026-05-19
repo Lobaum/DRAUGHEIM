@@ -16,13 +16,7 @@ Escolha uma pasta onde você quer salvar o projeto.
 rode:
 
 ```bash
-git clone COLE_AQUI_A_URL_DO_REPOSITORIO
-```
-
-Exemplo:
-
-```bash
-git clone https://github.com/seu-usuario/draugheim.git
+git clone https://github.com/Lobaum/DRAUGHEIM.git
 ```
 
 Depois entre na pasta do projeto:
