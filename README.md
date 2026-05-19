@@ -27,7 +27,7 @@ cd draugheim
 
 ---
 
-# 3. Estrutura esperada do projeto
+# 2. Estrutura esperada do projeto
 
 O projeto deve estar organizado assim:
 
@@ -53,7 +53,7 @@ draugheim/
 
 ---
 
-# 4. Rodando o backend
+# 3. Rodando o backend
 
 No terminal, dentro da pasta principal do projeto, rode:
 
@@ -63,7 +63,7 @@ cd backend
 
 ---
 
-## 4.1 Instalar as dependências do backend
+## 3.1 Instalar as dependências do backend
 
 rode:
 
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4.4 Iniciar o backend
+## 3.2 Iniciar o backend
 
 Ainda dentro da pasta `backend`, rode:
 
@@ -104,7 +104,7 @@ Não feche esse terminal enquanto estiver jogando.
 
 ---
 
-## 4.5 Testar se o backend está funcionando
+## 3.3 Testar se o backend está funcionando
 
 Abra no navegador:
 
@@ -116,11 +116,11 @@ Se abrir uma tela chamada **Swagger UI**, o backend está funcionando.
 
 ---
 
-# 5. Rodando o frontend
+# 4. Rodando o frontend
 
 Abra **outro terminal**. Não feche o terminal do backend.
 
-## 5.1 Entrar na pasta do frontend
+## 4.1 Entrar na pasta do frontend
 
 No novo terminal, vá até a pasta do projeto:
 
@@ -136,7 +136,7 @@ cd frontend
 
 ---
 
-## 5.2 Instalar as dependências do frontend
+## 4.2 Instalar as dependências do frontend
 
 Rode:
 
@@ -146,7 +146,7 @@ npm install
 
 ---
 
-## 5.3 Criar o arquivo de ambiente
+## 4.3 Criar o arquivo de ambiente
 
 Dentro da pasta `frontend`, crie um arquivo chamado:
 
@@ -164,7 +164,7 @@ Esse arquivo informa ao frontend onde está rodando o backend.
 
 ---
 
-## 5.4 Iniciar o frontend
+## 4.4 Iniciar o frontend
 
 Ainda dentro da pasta `frontend`, rode:
 
@@ -188,7 +188,7 @@ Agora o jogo deve abrir.
 
 ---
 
-# 6. Problemas comuns
+# 5. Problemas comuns
 
 ## Problema: `uvicorn não é reconhecido`
 
@@ -265,7 +265,7 @@ npm run dev
 
 ---
 
-# 8. Como parar o projeto
+# 6. Como parar o projeto
 
 Para parar o backend ou frontend, clique no terminal e aperte:
 
@@ -275,7 +275,7 @@ CTRL + C
 
 ---
 
-# 9. Observação importante
+# 7. Observação importante
 
 Para o jogo funcionar, o backend e o frontend precisam estar rodando ao mesmo tempo.
 
